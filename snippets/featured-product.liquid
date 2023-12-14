@@ -1,6 +1,7 @@
 <li class="featured__product">
   <a href="/products/{{ product.handle }}" class="featured__product__link">
-    <img
+    <div class="featured__product__image-container">
+      <img
       src="{{ product.featured_image | image_url }}"
       alt="image"
       loading="lazy"
@@ -8,6 +9,7 @@
       height="295"
       class="featured__product__image"
     >
+    </div>
   </a>
   <a href="/products/{{ product.handle }}" class="featured__product__link">
     <h3 class="featured__product__title">{{ product.title }}</h3>
