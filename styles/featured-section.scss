@@ -71,8 +71,8 @@ $animationDuration: 0.3s;
     align-items: center;
 
     &__image {
-      max-width: 375px;
-      max-height: 295px;
+      width: 375px;
+      height: 295px;
       object-fit: cover;
       object-position: left bottom;
 

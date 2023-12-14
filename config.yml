@@ -1,0 +1,20 @@
+development:
+  password: staurt
+  theme_id: "887"
+  store: yullia-ant.myshopify.com
+  proxy: http://127.0.0.1:9292
+  ignore_files:
+    - "*.gif"
+    - "*.jpg"
+    - config/settings_data.json
+production:
+  password: staurt
+  theme_id: "887"
+  store: yullia-ant.myshopify.com
+  timeout: 60s
+  readonly: true
+test:
+  password: staurt
+  theme_id: "887"
+  store: yullia-ant.myshopify.com
+  ignores: ignore.txt
