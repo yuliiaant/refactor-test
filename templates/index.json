@@ -39,8 +39,8 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "featured_section": {
+      "type": "featured-section",
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -70,6 +70,6 @@
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_section"
   ]
 }

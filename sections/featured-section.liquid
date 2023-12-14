@@ -1,0 +1,23 @@
+{{ 'featured-section.css' | asset_url | stylesheet_tag }}
+
+<div class="featured">
+  <h1 class="featured__header">Featured Products</h1>
+  <ul class="featured__list">
+    {%- for product in collections.frontpage.products -%}
+    <li class="featured__product">
+      <a href="/products/{{ product.handle }}" class="featured__product--link">
+        <img src="{{ product.featured_image | image_url }}" alt="image" loading="lazy" width="375" height="295"
+          class="featured__product--image">
+      </a>
+      <a href="/products/{{ product.handle }}" class="featured__product--link">
+        <h3 class="featured__product--title">{{ product.title }}</h3>
+      </a>
+      <form method="post" action="/cart/add" class="featured__product--form">
+        <input name="id" value="{{ product.variants.first.id }}" type="hidden">
+        <input name="add" value="Add to cart - {{ product.price | money }}" type="submit"
+          class="featured__product--button">
+      </form>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
