@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap");
+.featured {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  margin: 0;
+  padding: 40px 0 69px;
+}
+@media (min-width: 1024px) {
+  .featured {
+    row-gap: 80px;
+    padding: 139px 0 139px;
+  }
+}
+.featured__header {
+  margin: 0;
+  padding: 0;
+  color: #367488;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 42px;
+}
+@media (min-width: 1024px) {
+  .featured__header {
+    font-size: 48px;
+  }
+}
+.featured__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  list-style: none;
+  --columns: 1;
+  display: grid;
+  row-gap: 16px;
+  column-gap: 100px;
+  max-width: 986px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+@media (min-width: 1024px) {
+  .featured__list {
+    --columns: 2;
+    row-gap: 89px;
+  }
+}
+.featured__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featured__product__image {
+  max-width: 375px;
+  max-height: 295px;
+  object-fit: cover;
+  object-position: left bottom;
+}
+@media (min-width: 1024px) {
+  .featured__product__image {
+    width: 443px;
+    height: 357px;
+  }
+}
+.featured__product__link {
+  color: #000;
+  text-decoration: none;
+}
+.featured__product__link:hover {
+  text-decoration: underline;
+}
+.featured__product__title {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.featured__product__form.product-form {
+  margin: 0;
+  align-self: stretch;
+}
+.featured__product__button {
+  width: 100%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  padding: 20px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 40px;
+  background-color: #367488;
+  color: #fff;
+}
+.featured__product__button[aria-disabled=true] {
+  background-color: rgb(103, 153, 170);
+  cursor: not-allowed;
+}
+.featured__product__button:active {
+  background-color: #27596a;
+}
+
+.featured-buttons {
+  width: 100%;
+}
