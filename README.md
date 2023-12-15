@@ -1,7 +1,8 @@
 # Custom Featured Products section | Shopify Dawn Theme
 
-[STORE DEMO](https://yullia-ant.myshopify.com/)
-Password: staurt
+[STORE DEMO](https://yullia-ant2.myshopify.com/)
+
+Password: ufawff
 
 Custom 'Featured Products' section main features:
 - Dawn theme was used as base theme
