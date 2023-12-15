@@ -23,5 +23,5 @@ Custom 'Featured Products' section main features:
 
 1. Clone this repository
 2. Run 'npm install' in terminal to install dependencies
-3. Start a local development server by running 'shopify theme dev --store {yullia-ant}' in terminal
+3. Start a local development server by running 'shopify theme dev --store {yullia-ant2}' in terminal
 4. In Google Chrome, navigate to http://127.0.0.1:9292 to open the theme preview.
